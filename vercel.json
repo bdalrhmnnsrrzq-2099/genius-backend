@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "genius-backend",
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "FIREBASE_PROJECT_ID":    "@firebase_project_id",
+    "FIREBASE_CLIENT_EMAIL":  "@firebase_client_email",
+    "FIREBASE_PRIVATE_KEY":   "@firebase_private_key",
+    "ANTHROPIC_API_KEY":      "@anthropic_api_key",
+    "VAPID_PUBLIC_KEY":       "@vapid_public_key",
+    "VAPID_PRIVATE_KEY":      "@vapid_private_key",
+    "VAPID_EMAIL":            "@vapid_email",
+    "ALLOWED_ORIGIN":         "@allowed_origin"
+  },
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30
+    }
+  }
+}

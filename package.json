@@ -1,0 +1,19 @@
+{
+  "name": "genius-backend",
+  "version": "1.0.0",
+  "description": "Genius Study Manager — Backend API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "anthropic": "^0.24.0",
+    "web-push": "^3.6.7",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
